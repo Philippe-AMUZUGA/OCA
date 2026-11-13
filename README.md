@@ -31,7 +31,7 @@ pip install -r requirements.txt
 | Python | 3.12 | interpréteur |
 | `pandas` | 3.0.0 | tables, lecture Excel, export LaTeX |
 | `numpy` | 2.0 | algèbre et masques booléens |
-| `scipy` | 1.14.1 | corrélations |
+| `scipy` | 1.16.1 | corrélations |
 | `matplotlib` | 3.9.3 | figures |
 | `seaborn` | 0.13 | cartes de chaleur et styles |
 | `networkx` | 3.3 | graphes de dominance et condensation |

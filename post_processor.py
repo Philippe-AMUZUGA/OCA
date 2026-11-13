@@ -2720,7 +2720,12 @@ def compile_latex(
                 os.remove(auxiliary)
             except OSError:
                 pass
-    return pdf
+    # Chemin rendu relatif au répertoire courant (celui du lancement) : output.json ne doit révéler aucun
+    # nom de dossier local.
+    try:
+        return os.path.relpath(pdf)
+    except ValueError:  # autre lecteur (Windows) : repli sur le chemin tel quel
+        return pdf
 
 
 def merge_pdfs_report(filedir: str, merged_name: str,
