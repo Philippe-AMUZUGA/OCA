@@ -1,0 +1,65 @@
+
+    \documentclass{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage{longtable}
+    \usepackage[a4paper, margin=1in]{geometry}
+    \usepackage{booktabs}
+    \usepackage{graphicx}
+    %\usepackage{lscape}
+    \usepackage{underscore}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    %\usepackage{float}
+    \usepackage{amsmath}  % Pour des environnements mathématiques supplémentaires si nécessaire
+    \usepackage{hyperref} % Pour les liens hypertextes
+    %\usepackage{cleveref} % Pour des références plus intelligentes
+    \usepackage{siunitx}  % Pour une meilleure gestion des unités
+    \usepackage{babel}    % Pour la gestion de la langue
+    \usepackage[table]{xcolor} % pour utiliser les couleurs dans les tableaux
+
+    \begin{document}
+    \begin{table}[htbp!]
+\centering
+\caption{\centering \small Sélection de 30 lignes aléatoirement dans les données. Le coefficient de majoration $\alpha=$1.55. La valeur maximale de $\beta$ est 1.40. La valeur moyenne de $\beta$ est 1.21. Colonnes disposées par score de dominance ordinale croissant, moyenne des proportions de majoration de la matrice de corrélation ordinale de l'étape 2, établie par comparaison des colonnes deux à deux. Cet extrait relève de la seule illustration : $\kappa$, $\beta$ et le classement des zones sont établis sur l'intégralité des observations. Les zones ici présentes sont celles que la sélection de l'étape 1 a retenues sur la fréquence de dominance un contre tous (One-vs-All), laquelle gouverne le filtrage et non la disposition. La valeur de $\beta$ reportée est le rapport \emph{minimal} de l'enveloppe aux grandeurs qu'elle majore, conformément aux valeurs de la Table 4 du papier de référence. Voir Amuzuga et Iwaniack, Int. J. Pressure Vessels and Piping 222 (2026) 105801, section 2.5.2, algorithme 2 et Table 4. }
+\label{tab:desc_stats}
+\begingroup\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrr|>{\columncolor{black!50!white}\color{white}}r|>{\columncolor{black!50!white}\color{white}}r}
+\toprule
+ & TRESCA_LIN_Z1_L & D1/e + 0.5*H3/e & $\alpha$TRESCA_LIN_Z1_L & $\beta$ \\
+\midrule
+1 & 283 & 347 & 439 & 1.27 \\
+2 & 155 & 196 & 241 & 1.23 \\
+3 & 137 & 177 & 212 & 1.2 \\
+4 & 213 & 251 & 329 & 1.31 \\
+5 & 157 & 196 & 243 & 1.24 \\
+6 & 181 & 240 & 281 & 1.17 \\
+7 & 111 & 163 & 171 & 1.05 \\
+8 & 117 & 155 & 181 & 1.17 \\
+9 & 120 & 174 & 186 & 1.07 \\
+10 & 255 & 321 & 395 & 1.23 \\
+11 & 247 & 288 & 384 & 1.33 \\
+12 & 135 & 174 & 209 & 1.2 \\
+13 & 154 & 211 & 238 & 1.13 \\
+14 & 183 & 222 & 284 & 1.28 \\
+15 & 216 & 254 & 335 & 1.32 \\
+16 & 78.1 & 118 & 121 & 1.03 \\
+17 & 218 & 281 & 337 & 1.2 \\
+18 & 97.6 & 127 & 151 & 1.2 \\
+19 & 159 & 196 & 247 & 1.26 \\
+20 & 107 & 159 & 165 & 1.04 \\
+21 & 106 & 158 & 164 & 1.04 \\
+22 & 218 & 258 & 339 & 1.31 \\
+23 & 134 & 190 & 208 & 1.09 \\
+24 & 129 & 182 & 199 & 1.09 \\
+25 & 173 & 211 & 268 & 1.27 \\
+26 & 141 & 179 & 218 & 1.22 \\
+27 & 148 & 204 & 229 & 1.13 \\
+28 & 89.1 & 130 & 138 & 1.06 \\
+29 & 222 & 260 & 345 & 1.33 \\
+30 & 216 & 255 & 335 & 1.31 \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+\end{document}

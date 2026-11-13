@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oca"
+version = "9.0.0"
+description = "OCA, Ordinal Correlation Algorithm : reduction de dimension par ordre partiel de dominance et regularisation par enveloppe majorante."
+readme = "README.md"
+requires-python = ">=3.12"
+# Expression SPDX (PEP 639) : la licence se declare ici, sans classificateur
+# « License :: » redondant, que setuptools recent refuse en meme temps.
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Philippe AMUZUGA" }]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+keywords = ["ordinal-correlation", "dominance", "partial-order", "mechanical-engineering", "pressure-vessel", "OCA"]
+
+# Socle valide sous Python 3.12, pandas 3.0, numpy 2.x, scipy 1.1x,
+# matplotlib 3.11, seaborn 0.13, networkx 3.x, openpyxl 3.1.5, Jinja2 3.1.5.
+# Les bornes de openpyxl, Jinja2, scipy et matplotlib sont les exigences minimales
+# de pandas 3.0 pour ses dependances optionnelles (pandas.compat._optional) : un
+# environnement plus ancien serait refuse par pandas a l'usage.
+# - openpyxl : lecture et ecriture des classeurs .xlsx (moteur de pandas).
+# - Jinja2 : requis par pandas pour ecrire les tableaux LaTeX (Styler.to_latex).
+# - pypdf : fusion des PDF ; PyPDF2 >= 3.0 reste accepte en repli par le code,
+#   mais n'est plus une dependance declaree.
+dependencies = [
+    "pandas>=3.0.0",
+    "numpy>=2.0",
+    "scipy>=1.14.1",
+    "matplotlib>=3.9.3",
+    "seaborn>=0.13",
+    "networkx>=3.3",
+    "pypdf>=3.9",
+    "openpyxl>=3.1.5",
+    "Jinja2>=3.1.5",
+]
+
+[project.scripts]
+oca = "main_OCA:main"
+
+[project.urls]
+Homepage = "https://github.com/Philippe-AMUZUGA/OCA"
+Source = "https://github.com/Philippe-AMUZUGA/OCA"
+Issues = "https://github.com/Philippe-AMUZUGA/OCA/issues"
+
+# Structure de modules plats (chaque .py est un module de premier niveau), pour
+# rester lisible et auditable localement tout en restant installable via pip.
+[tool.setuptools]
+py-modules = ["main_OCA", "config_manager", "oca_model", "post_processor", "latex_support"]
+
+[tool.setuptools.package-data]
+"*" = ["input.json"]

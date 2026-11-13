@@ -1,0 +1,22 @@
+Matrice de correlation ordinale initiale (avant selection des variables) sur 8 zones critiques.
+Lecture : la valeur en ligne i et colonne j est la proportion d'observations telles que j est majoree par i.
+
+                 TRESCA_LIN_Z1_R  TRESCA_LIN_Z2_R  TRESCA_LIN_Z3_R  TRESCA_LIN_Z1_L  TRESCA_LIN_Z2_L  TRESCA_LIN_Z3_L  D1/e + 0.5*H3/e    D1/e
+TRESCA_LIN_Z1_R              NaN           0.9956           0.9989           0.5050           0.9956           0.9989              0.0  0.9151
+TRESCA_LIN_Z2_R           0.0044              NaN           0.6692           0.0055           0.4818           0.6714              0.0  0.1003
+TRESCA_LIN_Z3_R           0.0011           0.3308              NaN           0.0022           0.3341           0.5865              0.0  0.0000
+TRESCA_LIN_Z1_L           0.4950           0.9945           0.9978              NaN           0.9967           0.9978              0.0  0.9217
+TRESCA_LIN_Z2_L           0.0044           0.5182           0.6659           0.0033              NaN           0.6814              0.0  0.1058
+TRESCA_LIN_Z3_L           0.0011           0.3286           0.4135           0.0022           0.3186              NaN              0.0  0.0000
+D1/e + 0.5*H3/e           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000              NaN  1.0000
+D1/e                      0.0849           0.8997           1.0000           0.0783           0.8942           1.0000              0.0     NaN
+
+Dominations atteignant le seuil 0.99 (degre sortant attendu au graphe) :
+  TRESCA_LIN_Z1_R : 4 -> TRESCA_LIN_Z2_R, TRESCA_LIN_Z3_R, TRESCA_LIN_Z2_L, TRESCA_LIN_Z3_L
+  TRESCA_LIN_Z2_R : 0
+  TRESCA_LIN_Z3_R : 0
+  TRESCA_LIN_Z1_L : 4 -> TRESCA_LIN_Z2_R, TRESCA_LIN_Z3_R, TRESCA_LIN_Z2_L, TRESCA_LIN_Z3_L
+  TRESCA_LIN_Z2_L : 0
+  TRESCA_LIN_Z3_L : 0
+  D1/e + 0.5*H3/e : 7 -> TRESCA_LIN_Z1_R, TRESCA_LIN_Z2_R, TRESCA_LIN_Z3_R, TRESCA_LIN_Z1_L, TRESCA_LIN_Z2_L, TRESCA_LIN_Z3_L, D1/e
+  D1/e : 2 -> TRESCA_LIN_Z3_R, TRESCA_LIN_Z3_L

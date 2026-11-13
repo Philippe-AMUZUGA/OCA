@@ -1,0 +1,11 @@
+Compter combien de fois une valeur de la colonne est supérieure à toutes les autres valeurs des autres colonnes sur la même ligne
+  TRESCA_LIN_Z1_R TRESCA_LIN_Z2_R  ...   D1/e D1/e + 0.5*H3/e
+n               0               0  ...      0             907
+p           0.00%           0.00%  ...  0.00%         100.00%
+N               0               0  ...      0             907
+P           0.00%           0.00%  ...  0.00%         100.00%
+
+[4 rows x 8 columns]
+{'Colonnes où p est inférieure à 0.5%': ['TRESCA_LIN_Z1_R', 'TRESCA_LIN_Z2_R', 'TRESCA_LIN_Z3_R', 'TRESCA_LIN_Z1_L', 'TRESCA_LIN_Z2_L', 'TRESCA_LIN_Z3_L', 'D1/e'], 'Colonnes où p est supérieure à 10%': ['D1/e + 0.5*H3/e']}
+
+Liste des zones critiques après mise à jour :['D1/e + 0.5*H3/e', 'TRESCA_LIN_Z1_L']

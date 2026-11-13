@@ -1,0 +1,59 @@
+
+    \documentclass{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage{longtable}
+    \usepackage[a4paper, margin=1in]{geometry}
+    \usepackage{booktabs}
+    \usepackage{graphicx}
+    \usepackage{underscore}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    \usepackage{amsmath}
+    \usepackage{hyperref}
+    \usepackage{siunitx}
+    \usepackage{babel}
+    \usepackage[table]{xcolor}
+
+    \begin{document}
+    \begin{table}[htbp!]
+\centering
+\caption{\centering \small Comptage de dominance un contre tous (One-vs-All) : pour chacune des configurations de la base, la zone portant la contrainte maximale est relevée, et la fréquence $p$ qui en résulte fonde la hiérarchie puis le filtrage des zones. Ce comptage relève strictement de l'étape 1 de l'algorithme, la sélection par l'ordre de Pareto généralisé. Nombre de cas examinés = 907. Colonnes disposées par fréquence $p$ croissante, de la zone la moins dominante à la plus dominante ; les cumuls $N$ et $P$ suivent cet ordre. Le comptage porte sur l'intégralité des observations. Voir Amuzuga et Iwaniack, Int. J. Pressure Vessels and Piping 222 (2026) 105801, section 2.5.2, algorithme 1 et Table 3. }
+\label{tab:result}
+\begingroup\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrrrr}
+\toprule
+ & TRESCA_LIN_Z1_R & TRESCA_LIN_Z2_R & TRESCA_LIN_Z3_R & TRESCA_LIN_Z1_L \\
+\midrule
+n & 0 & 0 & 0 & 0 \\
+p & 0.00\% & 0.00\% & 0.00\% & 0.00\% \\
+N & 0 & 0 & 0 & 0 \\
+P & 0.00\% & 0.00\% & 0.00\% & 0.00\% \\
+\bottomrule
+\end{tabular}
+\vspace{0.35cm}
+
+\begin{tabular}{lrrrr}
+\toprule
+ & TRESCA_LIN_Z2_L & TRESCA_LIN_Z3_L & D1/e & D1/e + 0.5*H3/e \\
+\midrule
+n & 0 & 0 & 0 & 907 \\
+p & 0.00\% & 0.00\% & 0.00\% & 100.00\% \\
+N & 0 & 0 & 0 & 907 \\
+P & 0.00\% & 0.00\% & 0.00\% & 100.00\% \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+
+    \vspace*{0.5cm}
+\begin{sloppypar}
+\begin{description}
+\item[Colonnes où p est inférieure à 0.5\%] ['TRESCA_LIN_Z1_R', 'TRESCA_LIN_Z2_R', 'TRESCA_LIN_Z3_R', 'TRESCA_LIN_Z1_L', 'TRESCA_LIN_Z2_L', 'TRESCA_LIN_Z3_L', 'D1/e']
+\item[Colonnes où p est supérieure à 10\%] ['D1/e + 0.5*H3/e']
+\end{description}
+\end{sloppypar}
+\vspace*{0.5cm}
+
+    \end{document}
+    

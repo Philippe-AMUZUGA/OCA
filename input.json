@@ -1,0 +1,45 @@
+{
+  "critical_zones": [
+    "TRESCA_LIN_Z1_R", "TRESCA_LIN_Z2_R", "TRESCA_LIN_Z3_R",
+    "TRESCA_LIN_Z1_L", "TRESCA_LIN_Z2_L", "TRESCA_LIN_Z3_L"
+  ], // vide ou absent : déduit du classeur
+  "feature_cols_init": ["e", "D1", "ALPHA", "H", "R1", "R2", "H3", "D3"],
+  "input_dir": "./input",
+  "output_dir": "./output",
+  "output_json": "./output.json",
+  "data_files": "dataSet_ALL.xlsx",
+  "merged_subdir": [
+    "01-RMR-P1_Fv0_Fext0", "02-RMR-P0_Fv1_Fext0", "03-RMR-P0_Fv0_Fext1"
+  ],
+  "user_defined_vars": false,
+  "user_defined_vars_cols": [],
+  "gpo_selection": {
+    "threshold_low": 0.5,
+    "threshold_high": 10.0
+  },
+  "gpo_regularization": {
+    "target_zone": "none", // none = cible automatique
+    "threshold": 0.99,
+    "kappa_min": 1.0,
+    "kappa_max": 3.0,
+    "kappa_step": 0.01
+  },
+  "ordinal_graph": {
+    "threshold": 0.99
+  },
+  "latex_output": {
+    "sample_size": 30,
+    "max_columns_per_block": 6,
+    "table_font_size": "scriptsize", // tiny|scriptsize|footnotesize|small|normalsize
+    "table_column_separation": "2pt",
+    "compiler": "auto" // auto|pdflatex|tectonic|none
+  },
+  "sample_random_state": 6,
+  "color_style": {
+    "color_map_matrix": "RdBu_r", // vlag|RdBu_r|coolwarm|viridis|plasma|jet
+    "color_map_critical_zones": "jet", // jet|vlag|tab10|tab20|Set1|Dark2
+    "saturation": 1.0,
+    "alpha": 1.0,
+    "apply_to": "background" // text|background
+  }
+}

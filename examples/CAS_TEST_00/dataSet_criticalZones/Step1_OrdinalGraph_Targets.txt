@@ -1,0 +1,27 @@
+Graphe des relations d'ordre entre les variables
+Paires avec une proportion de violations de supériorité >= 0.99 :
+TRESCA_LIN_Z1_R < TRESCA_LIN_Z2_R : proportion = 1.00
+TRESCA_LIN_Z1_R < TRESCA_LIN_Z3_R : proportion = 1.00
+TRESCA_LIN_Z1_R < TRESCA_LIN_Z2_L : proportion = 1.00
+TRESCA_LIN_Z1_R < TRESCA_LIN_Z3_L : proportion = 1.00
+TRESCA_LIN_Z1_L < TRESCA_LIN_Z2_R : proportion = 0.99
+TRESCA_LIN_Z1_L < TRESCA_LIN_Z3_R : proportion = 1.00
+TRESCA_LIN_Z1_L < TRESCA_LIN_Z2_L : proportion = 1.00
+TRESCA_LIN_Z1_L < TRESCA_LIN_Z3_L : proportion = 1.00
+D1/e + 0.5*H3/e < TRESCA_LIN_Z1_R : proportion = 1.00
+D1/e + 0.5*H3/e < TRESCA_LIN_Z2_R : proportion = 1.00
+D1/e + 0.5*H3/e < TRESCA_LIN_Z3_R : proportion = 1.00
+D1/e + 0.5*H3/e < TRESCA_LIN_Z1_L : proportion = 1.00
+D1/e + 0.5*H3/e < TRESCA_LIN_Z2_L : proportion = 1.00
+D1/e + 0.5*H3/e < TRESCA_LIN_Z3_L : proportion = 1.00
+D1/e + 0.5*H3/e < D1/e : proportion = 1.00
+D1/e < TRESCA_LIN_Z3_R : proportion = 1.00
+D1/e < TRESCA_LIN_Z3_L : proportion = 1.00
+
+Variables qui n'ont pas passé le seuil (pas de relations d'ordre) :
+
+Chaînes de comparaison :
+D1/e + 0.5*H3/e < TRESCA_LIN_Z1_R < TRESCA_LIN_Z2_R
+D1/e + 0.5*H3/e < TRESCA_LIN_Z1_R < TRESCA_LIN_Z3_R
+D1/e + 0.5*H3/e < TRESCA_LIN_Z1_R < TRESCA_LIN_Z2_L
+D1/e + 0.5*H3/e < TRESCA_LIN_Z1_R < TRESCA_LIN_Z3_L

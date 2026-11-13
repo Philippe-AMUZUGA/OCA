@@ -1,0 +1,27 @@
+# OCA 9.0.0 : dependances d'execution.
+#
+# Ce fichier reproduit les dependances declarees par 'pyproject.toml'. Il sert a
+# qui prefere installer l'environnement sans installer le paquet :
+#
+#     pip install -r requirements.txt
+#
+# Pour installer le paquet lui-meme, et disposer de la commande 'oca' :
+#
+#     pip install .
+#     ou, directement depuis le depot :
+#     pip install git+https://github.com/Philippe-AMUZUGA/OCA.git
+#
+# Socle valide sous Python 3.12, pandas 3.0, numpy 2.x, scipy 1.1x,
+# matplotlib 3.11, seaborn 0.13, networkx 3.x, pypdf, openpyxl 3.1.5, Jinja2 3.1.5.
+# Les bornes de openpyxl, Jinja2, scipy et matplotlib sont les exigences minimales
+# de pandas 3.0 pour ses dependances optionnelles. Jinja2 est requis par pandas pour
+# ecrire les tableaux LaTeX ; openpyxl lit et ecrit les classeurs .xlsx.
+pandas>=3.0.0
+numpy>=2.0
+scipy>=1.14.1
+matplotlib>=3.9.3
+seaborn>=0.13
+networkx>=3.3
+pypdf>=3.9
+openpyxl>=3.1.5
+Jinja2>=3.1.5

@@ -1,0 +1,114 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Outils de test et de couverture
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Typage et analyse statique
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# LaTeX : fichiers auxiliaires de compilation
+# ---------------------------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Les PDF de documentation sont versionnes ; ceux produits par le pipeline non.
+# Voir la regle sur output/ ci dessous.
+
+# ---------------------------------------------------------------------------
+# Sorties du pipeline OCA
+# ---------------------------------------------------------------------------
+# Les resultats sont reproductibles a partir des donnees et de la configuration :
+# ils n'ont pas vocation a etre versionnes.
+output/
+output.json
+OCA_run.log
+
+# Donnees d'entree : volumineuses et souvent confidentielles. L'arborescence est
+# conservee, son contenu non.
+input/*
+!input/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Classeurs et documents temporaires
+# ---------------------------------------------------------------------------
+~$*.xlsx
+~$*.docx
+*.tmp
+
+# ---------------------------------------------------------------------------
+# Systeme et editeurs
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
